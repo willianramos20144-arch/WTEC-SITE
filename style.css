@@ -688,4 +688,60 @@ footer {
     .atalhos {
         grid-template-columns: 1fr;
     }
+}/* HERO com imagem */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #0a1f44 0%, #123a7a 100%);
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1 1 400px;
+    max-width: 550px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    .hero-image img {
+        max-width: 100%;
+    }
 }
