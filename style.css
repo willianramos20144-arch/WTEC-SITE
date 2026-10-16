@@ -80,41 +80,50 @@ nav a:hover {
     color: #ffb400;
 }
 
-/* ========== HERO ========== */
+/* ========== HERO (com imagem) ========== */
 .hero {
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 140px 20px 80px;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #0a1f44 0%, #123a7a 100%);
+    color: #fff;
+    flex-wrap: wrap;
+    min-height: 70vh;
 }
 
 .hero-content {
-    max-width: 900px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    flex: 1 1 400px;
+    max-width: 550px;
 }
 
-.hero h2 {
-    font-size: 60px;
-    margin-bottom: 20px;
+.hero-content h2 {
+    font-size: 3rem;
     font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 24px;
+.hero-content p {
+    font-size: 1.2rem;
     line-height: 1.7;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.hero-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
 }
 
 /* ========== BOTÃO PADRÃO ========== */
@@ -125,10 +134,9 @@ nav a:hover {
     color: white;
     text-decoration: none;
     border-radius: 12px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 10px;
     transition: 0.3s;
     border: none;
     cursor: pointer;
@@ -605,12 +613,22 @@ footer {
         font-size: 14px;
     }
 
-    .hero h2 {
-        font-size: 36px;
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
     }
 
-    .hero p {
-        font-size: 18px;
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
     }
 
     .titulo h2 {
@@ -653,12 +671,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .hero h2 {
-        font-size: 28px;
+    .hero-content h2 {
+        font-size: 1.6rem;
     }
 
-    .hero p {
-        font-size: 16px;
+    .hero-content p {
+        font-size: 0.95rem;
     }
 
     .cards {
@@ -687,61 +705,5 @@ footer {
 
     .atalhos {
         grid-template-columns: 1fr;
-    }
-}/* HERO com imagem */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 60px 8%;
-    background: linear-gradient(135deg, #0a1f44 0%, #123a7a 100%);
-    color: #fff;
-    flex-wrap: wrap;
-}
-
-.hero-content {
-    flex: 1 1 400px;
-    max-width: 550px;
-}
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
-.hero-image {
-    flex: 1 1 400px;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 5%;
-    }
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-    .hero-image img {
-        max-width: 100%;
     }
 }
