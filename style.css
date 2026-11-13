@@ -13,6 +13,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f5f7fb;
     color: #222;
+    /* Espaço para a barra de aviso não cobrir o conteúdo final */
+    padding-bottom: 60px;
 }
 
 /* ========== TOPBAR ========== */
@@ -57,8 +59,8 @@ header {
 }
 
 .logo span {
-    font-size: 14px;
-    letter-spacing: 4px;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 nav {
@@ -80,7 +82,7 @@ nav a:hover {
     color: #ffb400;
 }
 
-/* ========== HERO (com imagem) ========== */
+/* ========== HERO ========== */
 .hero {
     display: flex;
     align-items: center;
@@ -140,6 +142,7 @@ nav a:hover {
     transition: 0.3s;
     border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -567,6 +570,7 @@ footer {
     background: #00264d;
     color: white;
     padding: 70px 8% 20px;
+    padding-bottom: 80px;
 }
 
 .footer-container {
@@ -594,116 +598,15 @@ footer {
     font-size: 15px;
 }
 
-/* ========== RESPONSIVIDADE ========== */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 5%;
-    }
-
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        padding: 8px 14px;
-        font-size: 14px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 5%;
-    }
-
-    .hero-content h2 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-    }
-
-    .titulo h2 {
-        font-size: 30px;
-    }
-
-    .cta h2,
-    .cta-final h2 {
-        font-size: 32px;
-    }
-
-    .cta p,
-    .cta-final p {
-        font-size: 18px;
-    }
-
-    .btn {
-        font-size: 18px;
-        padding: 14px 30px;
-    }
-
-    .atalho {
-        font-size: 16px;
-        padding: 15px 20px;
-    }
-
-    .topbar-container {
-        justify-content: center;
-        text-align: center;
-        gap: 8px;
-    }
-
-    .topbar {
-        font-size: 12px;
-    }
-
-    .logo h1 {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h2 {
-        font-size: 1.6rem;
-    }
-
-    .hero-content p {
-        font-size: 0.95rem;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .vantagens {
-        grid-template-columns: 1fr;
-    }
-
-    .passos {
-        grid-template-columns: 1fr;
-    }
-
-    .cards-avaliacoes {
-        grid-template-columns: 1fr;
-    }
-
-    .bairros {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .logos {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-
-    .atalhos {
-        grid-template-columns: 1fr;
-    }
-}
+/* ========== BARRA DE AVISO FIXA (RODAPÉ) ========== */
+.aviso-fixo-rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff9800;
+    color: #002b5c;
+    text-align: center;
+    padding: 12px 5%;
+    font-size: 14px;
+    font-weight:
