@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTEC Refrigeração</title>
+    <meta name="google-site-verification" content="KSvQcU3QdfueT_zJG7gNV_nU6oDIvKNoHgr06Jvv_9Y" />
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,6 +26,21 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- ========== MODAL DE AVISO INICIAL (POP-UP) ========== -->
+    <div id="modalAviso" class="modal-overlay">
+        <div class="modal-conteudo">
+            <span class="fechar-modal" onclick="fecharModal()">&times;</span>
+            <h2>Atenção!</h2>
+            <p>Antes de solicitar seu orçamento, confira nossas informações:</p>
+            <ul>
+                <li><strong>NÃO TROCAMOS BORRACHAS.</strong></li>
+                <li>Não atendemos as marcas <strong>Continental, Bosch e GE</strong>.</li>
+                <li>Atendimentos <strong>SOMENTE em Goiânia e Aparecida de Goiânia</strong>.</li>
+            </ul>
+            <button class="btn" onclick="fecharModal()" style="width: 100%;">Entendi</button>
+        </div>
+    </div>
+
     <!-- ========== TOPBAR ========== -->
     <div class="topbar">
         <div class="topbar-container">
@@ -38,7 +54,7 @@
     <header>
         <div class="logo">
             <h1>WTEC</h1>
-            <span>REFRIGERAÇÃO</span>
+            <span>REFRIGERAÇÃO E CLIMATIZAÇÃO</span>
         </div>
         <nav>
             <a href="#">Início</a>
@@ -238,7 +254,7 @@
     <section class="atendimento">
         <div class="container">
             <h2>Área de Atendimento</h2>
-            <p class="subtitulo">Atendemos Goiânia e região com rapidez e compromisso.</p>
+            <p class="subtitulo">Atendemos Goiânia e Aparecida de Goiânia com rapidez e compromisso.</p>
             <div class="bairros">
                 <div>✓ Setor Bueno</div>
                 <div>✓ Jardim América</div>
@@ -249,7 +265,7 @@
                 <div>✓ Vila Nova</div>
                 <div>✓ Jardim Goiás</div>
                 <div>✓ Parque Amazônia</div>
-                <div>✓ Goiânia e região</div>
+                <div>✓ Aparecida de Goiânia</div>
             </div>
             <a href="https://wa.me/5562981446237" class="btn">Solicitar Atendimento</a>
         </div>
@@ -340,6 +356,11 @@
             © 2026 WTEC Refrigeração. Todos os direitos reservados.
         </div>
     </footer>
+
+    <!-- ========== BARRA FIXA DE AVISO (RODAPÉ) ========== -->
+    <div class="aviso-fixo-rodape">
+        <p>⚠️ <strong>AVISO:</strong> NÃO TROCAMOS BORRACHAS. Não atendemos Continental, Bosch e GE. Atendimentos SOMENTE em Goiânia e Aparecida de Goiânia.</p>
+    </div>
 
     <!-- ========== JAVASCRIPT ========== -->
     <script src="script.js"></script>
