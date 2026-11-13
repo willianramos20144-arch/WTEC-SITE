@@ -50,7 +50,6 @@ function enviarDiagnostico() {
 
 /**
  * Função para abrir WhatsApp com mensagem personalizada
- * (pode ser usada em qualquer botão do site)
  */
 function falarWhatsApp(mensagemPersonalizada) {
     let mensagem = mensagemPersonalizada || 
@@ -60,10 +59,27 @@ function falarWhatsApp(mensagemPersonalizada) {
 }
 
 /**
- * Função para voltar ao topo da página (útil para botão flutuante)
+ * Função para voltar ao topo da página
  */
 function voltarAoTopo() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ==========================================
+// CONTROLE DO MODAL DE AVISO (POP-UP)
+// ==========================================
+function abrirModal() {
+    const modal = document.getElementById("modalAviso");
+    if (modal) {
+        modal.classList.add("mostrar");
+    }
+}
+
+function fecharModal() {
+    const modal = document.getElementById("modalAviso");
+    if (modal) {
+        modal.classList.remove("mostrar");
+    }
 }
 
 // ==========================================
@@ -82,4 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Abre o modal após 1 segundo de carregamento da página
+    setTimeout(abrirModal, 1000); 
 });
