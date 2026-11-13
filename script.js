@@ -44,26 +44,18 @@ function voltarAoTopo() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ==========================================
-// CONTROLE DO MODAL DE AVISO (POP-UP)
-// ==========================================
+// CONTROLE DO MODAL
 function abrirModal() {
     const modal = document.getElementById("modalAviso");
-    if (modal) {
-        modal.classList.add("mostrar");
-    }
+    if (modal) modal.classList.add("mostrar");
 }
 
 function fecharModal() {
     const modal = document.getElementById("modalAviso");
-    if (modal) {
-        modal.classList.remove("mostrar");
-    }
+    if (modal) modal.classList.remove("mostrar");
 }
 
-// ==========================================
-// EVENTOS AO CARREGAR A PÁGINA
-// ==========================================
+// EVENTOS AO CARREGAR
 document.addEventListener('DOMContentLoaded', function() {
     console.log('🚀 Site WTEC carregado!');
 
@@ -77,6 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Abre o modal após 1 segundo
+    // Abre o modal após 1 segundo de carregamento
     setTimeout(abrirModal, 1000); 
 });
